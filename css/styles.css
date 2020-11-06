@@ -350,7 +350,26 @@ header>.container.header-nav {
 .advantages-icon::before {
     content: '';
     display: block;
-    outline: 1px solid black;
     height: 120px;
     background: var(--background-icon);
+    background-size: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.antenna::before {
+    background-image: url('../images/antenna1.svg');
+}
+
+.clock::before {
+    background-image: url('../images/clock1.svg');
+}
+
+.diagram::before {
+    background-image: url('../images/diagram1.svg');
+}
+
+.astronaut::before {
+    background-image: url('../images/astronaut1.svg');
 }
