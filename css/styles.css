@@ -136,6 +136,7 @@ a:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    border: 0px;
 }  
 
 .button:hover,
@@ -235,9 +236,47 @@ footer {
    background: var(--background-color)
 }
 footer .container {
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-logo {
+    margin-top: 6px;
+}
+
+.join>h3 {
+    margin-top: 12px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-text-color);
+}
+
+.join {
+    margin-left: 70px;
+}
+
+footer .social-icons-link {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+footer .social-icons-link:hover,
+footer .social-icons-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+    fill: var(--main-title-text-color);
+}
+ footer .social-icons-svg {
+    fill: var(--main-title-text-color);
+ }
 
 /*arrangement of elements*/
 .container {
@@ -259,8 +298,8 @@ header>.container.header-nav {
     align-items: center;
 }
 .logo {
-    margin-top: 24px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-right: 93px;
 }
 .mail-link {
@@ -390,13 +429,27 @@ header>.container.header-nav {
     margin-right: 10px;
  }
 
- /* .header-link.current::after {
+ .current::after {
      content: '';
      display: block;
      width: 100%;
-     height: 2px;
+     height: 4px;
      background-color: var(--accent-color);
- } */
+     border-radius: 2px;
+     position: absolute;
+     top: 28;
+     left: 0;
+     
+ }
+ li .current {
+     position: relative;
+ }
+
+.header-link.current {
+    align-items: flex-end;
+}
+
+
 /* svg */
  .social-icons {
      display: flex;
